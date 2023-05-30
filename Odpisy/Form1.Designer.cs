@@ -28,45 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            _btnClassic = new Button();
-            _btnFast = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
-            // _btnClassic
+            // label1
             // 
-            _btnClassic.Location = new Point(83, 35);
-            _btnClassic.Name = "_btnClassic";
-            _btnClassic.Size = new Size(135, 52);
-            _btnClassic.TabIndex = 0;
-            _btnClassic.Text = "Rovnoměrný odpis";
-            _btnClassic.UseVisualStyleBackColor = true;
-            _btnClassic.Click += _btnClassic_Click;
+            label1.AutoSize = true;
+            label1.ForeColor = SystemColors.HotTrack;
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(133, 20);
+            label1.TabIndex = 2;
+            label1.Text = "Rovnoměrný odpis";
+            label1.Click += label1_Click;
             // 
-            // _btnFast
+            // label2
             // 
-            _btnFast.Location = new Point(235, 35);
-            _btnFast.Name = "_btnFast";
-            _btnFast.Size = new Size(127, 52);
-            _btnFast.TabIndex = 1;
-            _btnFast.Text = "Zrychlený odpis";
-            _btnFast.UseVisualStyleBackColor = true;
-            _btnFast.Click += _btnFast_Click;
+            label2.AutoSize = true;
+            label2.ForeColor = SystemColors.HotTrack;
+            label2.Location = new Point(163, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(113, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Zrychlený odpis";
+            label2.Click += label2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(443, 115);
-            Controls.Add(_btnFast);
-            Controls.Add(_btnClassic);
+            BackColor = SystemColors.ControlText;
+            ClientSize = new Size(300, 50);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Button _btnClassic;
-        private Button _btnFast;
+        private Label label1;
+        private Label label2;
     }
 }

@@ -30,12 +30,12 @@
         {
             _classControl = new Controls.ClassControl();
             _btnCount = new Button();
-            _listResult = new ListBox();
-            label1 = new Label();
+            _odpisy = new GroupBox();
             SuspendLayout();
             // 
             // _classControl
             // 
+            _classControl.ForeColor = SystemColors.Control;
             _classControl.Location = new Point(12, 12);
             _classControl.Name = "_classControl";
             _classControl.Size = new Size(445, 128);
@@ -43,7 +43,7 @@
             // 
             // _btnCount
             // 
-            _btnCount.Location = new Point(382, 12);
+            _btnCount.Location = new Point(172, 77);
             _btnCount.Name = "_btnCount";
             _btnCount.Size = new Size(114, 29);
             _btnCount.TabIndex = 1;
@@ -51,44 +51,34 @@
             _btnCount.UseVisualStyleBackColor = true;
             _btnCount.Click += _btnCount_Click;
             // 
-            // _listResult
+            // _odpisy
             // 
-            _listResult.FormattingEnabled = true;
-            _listResult.ItemHeight = 20;
-            _listResult.Location = new Point(382, 113);
-            _listResult.Name = "_listResult";
-            _listResult.Size = new Size(274, 304);
-            _listResult.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(487, 90);
-            label1.Name = "label1";
-            label1.Size = new Size(67, 20);
-            label1.TabIndex = 3;
-            label1.Text = "Výsledek";
+            _odpisy.ForeColor = SystemColors.Control;
+            _odpisy.Location = new Point(385, 26);
+            _odpisy.Name = "_odpisy";
+            _odpisy.Size = new Size(842, 630);
+            _odpisy.TabIndex = 2;
+            _odpisy.TabStop = false;
+            _odpisy.Text = "Odpisy";
             // 
             // ClassicForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(685, 437);
-            Controls.Add(label1);
-            Controls.Add(_listResult);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(1297, 709);
+            Controls.Add(_odpisy);
             Controls.Add(_btnCount);
             Controls.Add(_classControl);
             Name = "ClassicForm";
             Text = "ClassicForm";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Controls.ClassControl _classControl;
         private Button _btnCount;
-        private ListBox _listResult;
-        private Label label1;
+        private GroupBox _odpisy;
     }
 }

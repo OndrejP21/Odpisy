@@ -28,13 +28,31 @@ namespace Odpisy.Forms
 
             if (model.Price <= 80000)
             {
-                MessageBox.Show("Částku do 80 000 Kč lze odepsat rovnou!");
+                MessageBox.Show("80000 jde odepsat hned");
             }
             else
             {
                 List<string> list = _service.FastCount(model);
 
-                _listResult.DataSource = list;
+                int bigIndex = 0;
+                int index = 0;
+                int offsetX = 10;
+                int offsetY = 30;
+                foreach (var item in list)
+                {
+                    if (index == 20)
+                    {
+                        index = 0;
+                        bigIndex++;
+                        offsetX += 150;
+                    }
+                    Label lbl = new Label();
+                    lbl.Location = new Point(offsetX, offsetY + offsetY * index);
+                    lbl.Text = $"{bigIndex * 20 + index + 1}. – {item}";
+
+                    _odpisy.Controls.Add(lbl);
+                    index++;
+                }
             }
         }
     }

@@ -42,7 +42,7 @@
             _listClass.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             _listClass.Location = new Point(3, 31);
             _listClass.Name = "_listClass";
-            _listClass.Size = new Size(148, 84);
+            _listClass.Size = new Size(148, 124);
             _listClass.TabIndex = 0;
             // 
             // _numPrice
@@ -58,20 +58,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(14, 8);
+            label1.Location = new Point(44, 8);
             label1.Name = "label1";
             label1.Size = new Size(42, 20);
             label1.TabIndex = 3;
-            label1.Text = "Třída";
+            label1.Text = "Class";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(169, 8);
+            label2.Location = new Point(204, 8);
             label2.Name = "label2";
-            label2.Size = new Size(52, 20);
+            label2.Size = new Size(51, 20);
             label2.TabIndex = 4;
-            label2.Text = "Částka";
+            label2.Text = "Peníze";
             // 
             // ClassControl
             // 
@@ -82,7 +82,7 @@
             Controls.Add(_numPrice);
             Controls.Add(_listClass);
             Name = "ClassControl";
-            Size = new Size(356, 118);
+            Size = new Size(356, 166);
             ((System.ComponentModel.ISupportInitialize)_numPrice).EndInit();
             ResumeLayout(false);
             PerformLayout();

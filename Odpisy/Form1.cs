@@ -9,13 +9,13 @@ namespace Odpisy
             InitializeComponent();
         }
 
-        private void _btnClassic_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
             ClassicForm form = new ClassicForm();
             form.ShowDialog();
         }
 
-        private void _btnFast_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
             FastForm fast = new FastForm();
             fast.ShowDialog();
